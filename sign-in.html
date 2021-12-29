@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="">
+    <header class="container-fluid">
+        <nav>
+            <h1 class=" navbar-text">Zen</h1>
+            <ul class="nav pull-right">
+                <li> <a   href="sign-up.html">Sign Up</a> </li>
+                <li> <a class="currentLink" href="sign-in.html">Sign In</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container-fluid text-center" >
+        <div id="form">
+            <h2>Sign In</h2> <hr>
+            <div> 
+                <form autocomplete="off">
+                    <input id="email-signin" type="text" placeholder="Enter your e-mail"><br>
+                    <input id="password-signin" type="password" placeholder="Enter your password">
+                    <br> <button id="sign-in" onclick="checkAccount()" type="button">Sign In</button>
+                </form>
+            </div>
+            <div id="s-media">
+                <a href="https://www.youtube.com" target="_blank"><img src="#" alt="Youtube-Logo"></a>
+            </div>
+            <p id="show-incorrect"></p>
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
